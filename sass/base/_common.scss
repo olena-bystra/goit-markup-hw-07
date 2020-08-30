@@ -1,0 +1,27 @@
+.html{
+    box-sizing: border-box;
+}
+.body{
+    font-family: Roboto, Raleway;
+    font-size: 14px;
+    line-height: 1.625;
+    letter-spacing: 0.02em;
+}
+.container{
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}

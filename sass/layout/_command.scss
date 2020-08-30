@@ -1,0 +1,93 @@
+.command{
+    background-color: #F5F4FA;;
+}
+
+.command-item{
+    display: flex;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.command-item:nth-child(2n){
+    margin-right: 0;
+}
+
+.command-item:nth-last-child(-n+2){
+    margin-bottom: 0;
+}
+
+.command-list{
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 94px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+   /* outline: 2px solid tomato;*/
+}
+
+.command-list:nth-last-child(-n+1){
+    margin-right: 0;
+}
+
+.name{
+    display: block;
+    text-align: center;
+}
+
+.command-link{
+    display: inline-block;
+}
+
+.command-title {
+    margin-bottom: 30px;
+    margin-top: 0;
+    padding-top: 94px;
+    font-family: Roboto;
+    font-weight: bold;
+    line-height: 1.1;
+    color: var(--title-text-color);
+    text-align: center;
+}
+
+.command-name {
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 1.1;
+    text-align: center;
+    color: var(--title-text-color);
+}
+
+.command-profession {
+    font-family: Roboto;
+    font-weight: normal;
+    line-height: 1.1;
+    text-align: center;
+    color: var(--main-text-color);
+}
+
+.command-link:hover,
+.command-link:active {
+    color:#2196F3 ;
+}
+
+.icon-link{
+    display: flex;
+    width: 44px;
+    height: 44px;
+    margin-bottom: 24px;
+    border-radius: 50%;
+    justify-content: center;   
+}
+
+.networks{
+    margin-top: 12px;
+    fill: #AFB1B8;
+}
+
+.icon-link:hover{
+    background-color: #2196F3;
+}
+
+.icon.networks:hover{
+    fill: #ffffff;
+}

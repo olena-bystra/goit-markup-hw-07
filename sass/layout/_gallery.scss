@@ -1,0 +1,95 @@
+.portfolio-item{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-top: 50px;
+    margin-bottom: 94px;
+    justify-content: center;
+    /*outline: 2px solid tomato;*/
+}
+
+.portfolio-list:nth-child(3n){
+    margin-right: 0;
+}
+.portfolio-list{
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    /*outline: 2px solid tomato;*/
+}
+
+.portfolio-list:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-item.advantages-item:nth-child(){
+    margin-right: 0;
+}
+
+.portfolio-hero {
+    width: 370px;
+
+    padding: 63px 24px;
+    text-align: start;
+
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 18px;
+    line-height:1.555;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+   /* background-image: url(../images/img\(13\).jpg);*/
+    /*background: rgba(33, 150, 243, 0.9);*/
+
+}
+
+.portfolio-title {
+    padding-left: 24px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.06em;
+    line-height: 2;
+    color:$titlecolor;
+}
+
+.portfolio-services {
+    padding-left: 24px;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    line-height: 1.8;
+    color: $textcolor;
+}
+ .item{
+     display: block;
+ }
+
+ .hero-container{
+     position: relative;
+     display: block;
+     overflow: hidden;
+ }
+
+ .animation-hero{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+
+     transform: translateY(100%);
+     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+     background-color:  rgba(33, 150, 243, 0.9);
+ }
+
+ .card-animation:hover .animation-hero{
+     transform: translateY(0);
+     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }

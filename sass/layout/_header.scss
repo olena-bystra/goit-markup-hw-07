@@ -1,0 +1,100 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    padding-bottom: 0;
+}
+
+.nav{
+    display: inline-block;
+    margin-right: 0;
+}
+
+.nav +.nav{
+    margin-left: 50px;
+}
+
+.nav-item{
+    display: flex;
+    margin-top:32px;
+    margin-bottom:0;
+}
+
+.nav-link,
+.nav{
+    padding-bottom: 32px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: $titlecolor;
+    text-decoration: none;
+}
+
+.box-kontakt{
+    display: flex;
+    margin-right: 0;
+    margin-left: 305px;
+    padding-left:0;
+    align-items: center;
+}
+
+.phone,
+.email {
+   font-family: Roboto;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 16px;
+   letter-spacing: 0.02em;
+   text-decoration: none;
+   cursor: none;
+   color: $textcolor;
+}
+
+.phone{
+    margin-right: 0;
+}
+
+.email{
+    margin-right: 50px;
+}
+
+.email:hover,
+.phone:hover{
+    color: #2196F3;
+}
+
+.icon.kontakt:hover{
+    fill: #2196F3;
+}
+
+.icon.kontakt{
+    fill: #757575;
+}
+
+.nav-link{
+    position: relative;
+}
+
+.nav-link::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom:0;
+  
+    width:100%;
+    height: 4px;
+    
+    margin-top: 28px;
+
+    background-color: #2196F3;
+    border-radius: 2px;
+    display: none;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after{
+    display: block;
+}
